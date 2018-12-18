@@ -1,0 +1,14 @@
+.tabPart{ float: left; margin: 0; overflow: hidden; padding: 0; }
+	.tabPart .menuItem{ cursor: pointer; float: left; font-size: 14px; height: 45px; line-height: 35px; margin-left: -30px; overflow: hidden; position: relative; width: 90px; }
+		.tabPart .menuItem:nth-child(1){ margin-left: 0; }
+		.tabPart .menuItem:before { background-color: inherit; border-bottom-right-radius: 10px; box-shadow: 0px 10px 0px rgb(44, 69, 93); content: ''; height: 100%; left: -10px; overflow: hidden; position: absolute; top: 0; width: 20px; }
+		.tabPart .menuItem:after { background-color: inherit; border-bottom-left-radius: 10px; box-shadow: 0px 10px 0px rgb(44, 69, 93); content: ''; height: 100%; right: -10px; overflow: hidden; position: absolute; top: 0; width: 20px; }
+		.tabPart .menuItem span { background: rgb(44, 69, 93); border-right: 1px solid white; border-top-right-radius: 15px; border-top-left-radius: 15px; box-shadow: 5px 0 0 rgb(34, 52, 70); color: white; float: left; height: 100%; line-height: 45px; margin: 0 10px; text-align: center; text-overflow: ellipsis; white-space: nowrap; width: calc(100% - 21px); }
+
+
+	.tabPart .menuItem.selected span{
+		background-color: white!important;
+		color: rgb(9, 32, 61)!important;
+	}
+	.tabPart .menuItem.selected:before{ box-shadow: 0px 10px 0px white; }
+	.tabPart .menuItem.selected:after{ box-shadow: 0px 10px 0px white; }
